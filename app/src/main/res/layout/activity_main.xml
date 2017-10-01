@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,27 +10,21 @@
     android:paddingTop="16dp"
     tools:context="examele.myapplication.MainActivity">
 
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="상"
+        />
 
-    <TableRow>
-        <Button
-            android:text="가"
-            />
-        <Button
-            android:text="나"
-            android:layout_span = "2"
-            />
-        <Button
-            android:text="다"
-            />
-    </TableRow>
-    <TableRow>
-        <Button
-            android:layout_column="1"
-            android:text = "라"
-            />
-        <Button
-            android:text="마"
-            />
-    </TableRow>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="하"
+        />
+
     
-</TableLayout>
+</RelativeLayout>
