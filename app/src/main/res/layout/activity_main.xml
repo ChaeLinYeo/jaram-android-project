@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,28 +8,17 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:columnCount = "4"
-    android:rowCount="3"
     tools:context="examele.myapplication.MainActivity">
 
-    <Button
-        android:layout_column="0"
-        android:layout_row="0"
-        android:layout_rowSpan="2"
-        android:layout_gravity="fill_vertical"
-        android:text="가"
-        />
+    <RatingBar
+        android:layout_width="30dp"
+        android:layout_height="100dp" />
 
-    <Button
-        android:layout_column="1"
-        android:layout_row="0"
-        android:layout_columnSpan="3"
-        android:layout_gravity="fill_horizontal"
-        android:text="나"
-        />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="가" />
 
-    <Button
-        android:layout_column="2"
-        android:layout_row="1"
-        android:text="다"/>
-</GridLayout>
+
+</FrameLayout>
